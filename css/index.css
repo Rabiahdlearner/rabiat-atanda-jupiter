@@ -1,6 +1,7 @@
-.work-sans {
-  font-family: "Work Sans", serif;
+.fonts {
+  font-family: poppin, lato, "Work Sans", serif;
   font-optical-sizing: auto;
+  line-height: 1.5;
   font-weight: 300;
   font-style: normal;
 }
@@ -8,7 +9,7 @@
 body {
     background-color: #f9f9f9;
     color: #003153;
-    font-family: poppin, lato;
+    
     
 }
 
