@@ -39,8 +39,9 @@ h1 {
 }
 
 .skill-icons--linkedin {
-  padding-left: 2px;
-  display: inline-block;
+  padding-left: ;
+  display: flex;
+  justify-self: center;
   width: 5vw;
   height: 5vh;
   background-repeat: no-repeat;
@@ -50,6 +51,7 @@ h1 {
 
 .connect {
   font-style: oblique;
+  text-align: center;
 }
 
 .rabiat{
