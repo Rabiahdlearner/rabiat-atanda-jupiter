@@ -1,3 +1,21 @@
+#navbar {
+  display: flex;
+  background-color: rgb(146, 252, 252);
+  position: sticky;
+  justify-content: flex-end;
+   
+}
+
+#navbar a{ 
+  justify-content: space-evenly;
+  justify-items: end;
+  text-decoration: none;
+  padding: 1%;
+  font-family: Helvetica, Arial;
+  font-size:13px;
+  color: #003153;
+}
+
 .fonts {
   font-family: "Work Sans", poppin, lato, serif;
   font-optical-sizing: auto;
@@ -57,9 +75,8 @@ h1 {
 }
 
 .rabiat {
-  width: 25vw;
-  height: 20vh;
-  margin-bottom: -5%;
+  width: 20%;
+  height: 25%;
   display: flex;
   justify-self: center;
   border-radius: 2em 1em/5em;
