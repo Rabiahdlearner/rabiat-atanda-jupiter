@@ -1,16 +1,18 @@
 .fonts {
-  font-family: poppin, lato, "Work Sans", serif;
+  font-family: "Work Sans", poppin, lato, serif;
   font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 300;
   font-style: normal;
+
+
 }
 
 body {
-    background-color: #f9f9f9;
-    color: #003153;
-    
-    
+  background-color: #f9f9f9;
+  color: #003153;
+
+
 }
 
 
@@ -19,7 +21,7 @@ p {
   padding: 1%;
   margin: 7px;
   margin-bottom: 2px;
-  
+
 }
 
 li {
@@ -40,7 +42,6 @@ h1 {
 }
 
 .skill-icons--linkedin {
-  padding-left: ;
   display: flex;
   justify-self: center;
   width: 5vw;
@@ -55,7 +56,7 @@ h1 {
   text-align: center;
 }
 
-.rabiat{
+.rabiat {
   width: 25vw;
   height: 20vh;
   margin-bottom: -5%;
@@ -63,4 +64,13 @@ h1 {
   justify-self: center;
   border-radius: 2em 1em/5em;
 
+}
+
+.container {
+  display: flex;
+  padding-right: 2vw;
+}
+
+.container div {
+  flex: 1;
 }
