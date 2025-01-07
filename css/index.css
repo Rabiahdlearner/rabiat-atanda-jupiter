@@ -1,83 +1,24 @@
+/*Header navigation  styling*/
 #navbar {
   display: flex;
   background-color: rgb(146, 252, 252);
   width: 100%;
   position: fixed;
+  top: 0;
   justify-content: flex-end; 
 }
 
+/* Naviagtion links in the header menu bar */
 #navbar a{ 
   text-decoration: none;
-  padding: 1vw;
+  padding: 2vw;
   font-family: Helvetica, Arial;
-  font-size:13px;
+  font-size: 2.2vh;
   color: #003153;
   
 }
 
-.fonts {
-  font-family: "Work Sans", poppin, lato, serif;
-  font-optical-sizing: auto;
-  line-height: 1.5;
-  font-weight: 300;
-  font-style: normal;
-
-
-}
-
-body {
-  background-color: #f9f9f9;
-  color: #003153;
-
-
-}
-
-
-
-p {
-  padding: 1%;
-  margin: 7px;
-  margin-bottom: 2px;
-
-}
-
-li {
-  text-align: left;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-block-style: dotted #f9f9f9;
-
-}
-
-h1 {
-  text-align: center;
-  color: rgb(7, 49, 36);
-  font-size: xx-large;
-  font-weight: bolder;
-  font-style: oblique;
-
-}
-
-.skill-icons--linkedin {
-  display: flex;
-  justify-self: center;
-  width: 5vw;
-  height: 5vh;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg fill='none'%3E%3Crect width='256' height='256' fill='%23fff' rx='60'/%3E%3Crect width='256' height='256' fill='%230a66c2' rx='60'/%3E%3Cpath fill='%23fff' d='M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4M38 59.628c0 11.864 9.767 21.626 21.632 21.626c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627m6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-
-.connect {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-style: oblique;
-  
-}
-
+/*Rabiat's headshot on the webpage*/
 .rabiat {
   padding-top: 8vw;
   width: 20%;
@@ -88,12 +29,81 @@ h1 {
 
 }
 
+/*The website font*/
+.fonts {
+  font-family: "Work Sans", poppin, lato, serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-weight: 300;
+  font-style: normal;
+
+
+}
+
+/*Body of the website page*/
+body {
+  background-color: #f9f9f9;
+  color: #003153;
+
+
+}
+
+/*Mainheading*/
+h1 {
+  text-align: center;
+  color: rgb(7, 49, 36);
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+/*Paragraphs of the webpage*/
+p {
+  padding: 1%;
+  margin: 7px;
+  margin-bottom: 2px;
+
+}
+
+/*Experiences containers*/
 .container {
   display: flex;
   padding-right: 2vw;
 }
 
+/*Job title and date in the experience container*/
 .container p {
   flex: 1 1 auto;
+}
+
+/*Ordered lists in the webpage*/
+li {
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-block-style: dotted #f9f9f9;
+
+}
+
+
+/*Social link description*/
+.connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
   
 }
+
+/*Actual Social link*/
+.skill-icons--linkedin {
+  display: flex;
+  justify-self: center;
+  width: 5vw;
+  height: 5vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg fill='none'%3E%3Crect width='256' height='256' fill='%23fff' rx='60'/%3E%3Crect width='256' height='256' fill='%230a66c2' rx='60'/%3E%3Cpath fill='%23fff' d='M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4M38 59.628c0 11.864 9.767 21.626 21.632 21.626c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627m6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
