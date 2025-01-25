@@ -3,25 +3,51 @@
 // Create footer
 document.addEventListener("DOMContentLoaded", function () {
 
-    const footer = document.createElement("footer")
+     // skills section
+     const skills = ["Javascript", "HTML", "CSS", "Python", "Github"];
 
-    footer.setAttribute("id", "foot-parent")  
+     const skillsSection = document.querySelector("#skills");
+ 
+     const skillsList = skillsSection.getElementsByTagName("ul");
+ 
+     for (let i = 0; i < skillsList.length; i++) {
+         const ul = skillsList[i];
+ 
+         for (let j = 0; j < skills.length; j++) {
+             const skill = skills[j];
+             const li = document.createElement("li");
+             li.classList.add("skill");
+             li.textContent = skill;
+             ul.appendChild(li);
+         }
+     }
+ 
+        // Create footer
+    const foot=document.querySelector("#footer");
 
-    const footParent = document.querySelector("#foot-parent");
-
-    if (footParent) {
+    if (foot) {
+    const footer = document.createElement("footer");   
     
+    footer.setAttribute("id", "foot-parent");
+ 
 
-    const copyright = document.createElement("p");
+        const copyright = document.createElement("p");
 
-    copyright.classList.add("copyright");
+        copyright.classList.add("copyright");
 
-    const thisYear = new Date().getFullYear();
+        const today = new Date();
 
-    copyright.textContent = "Copyright \u00A9" + thisYear + " by Rabiat Atanda";
+        const thisYear = today.getFullYear();
 
-    footParent.appendChild(copyright);
+        copyright.textContent = `Copyright \u00A9 ${thisYear} by Rabiat Atanda`;
+
+        footer.appendChild(copyright);
+        foot.appendChild(footer);
     } else {
-        console.log("no footParent found");
+        console.log("no footer found");
     }
+
+   
+
 })
+
