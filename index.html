@@ -12,18 +12,24 @@
 
 <body class="body">
     <nav class="navbar">
-        <a href="/About/">About</a>
-        <a href="/Experience/">Experience</a>
-        <a href="/Skills/">Skills</a>
-        <a href="/Projects/">Projects</a>
-        <a href="/Connect/">Connect</a>
-
         <!--hamburger menu -->
+        <input type="checkbox" id="nav-toggle">
         <div class="mobile-icon">
             <div class="hamburger"></div>
             <div class="hamburger"></div>
             <div class="hamburger"></div>
         </div>
+
+        <div class="nav-container">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#connect">Connect</a>
+            <a href="#leave-message">Contact</a>
+        </div>
+
+
 
     </nav>
 
@@ -68,21 +74,18 @@
             <p><strong>09/2022 - 09/2024</strong></p>
         </div>
         <ul>
-            <li>Extracted, cleaned, and integrated datasets from different source enhancing data
-                quality for comprehensive analysis and research insights</li>
-            <li>Successfully wrote reports from data analyses to draw conclusion about accuracy, integrity and general
-                relationships</li>
-            <li>Provided academic support to students by identifying and addressing areas of difficulty, enhancing their
-                understanding and performance</li>
-            <li>Participated actively in the pulse crop breeding program, focusing on research and statistical analysis
-                to
-                enhance valuable contributions to the program’s development</li>
-            <li>Designed and executed controlled experiments with precision, ensuring reliable data collection and
-                leading
-                to accurate and actionable insights for crop improvement</li>
+            <li>Conducted research on Machine Learning Models with drone image values on crop trait prediction,
+                utilizing advanced statistical techniques to analyze data and draw meaningful conclusions</li>
             <li>Applied advanced statistical techniques to complex datasets, extracting valuable insights that improved
                 crop
                 yields and quality, while demonstrating dedication to technological advancement and innovation</li>
+            <li>Extracted, cleaned, and integrated datasets from different source enhancing data
+                quality for comprehensive analysis and research insights</li>
+            <li>Presented reports from data analyses to draw conclusion about accuracy, integrity and general
+                relationships</li>
+            <li>Provided academic support to students by identifying and addressing areas of difficulty, enhancing their
+                understanding and performance</li>
+
         </ul>
 
         <div class="container">
@@ -165,13 +168,38 @@
     <section id="skills" class="fonts">
         <h2>Skills</h2>
         <ul>
-</ul>
+        </ul>
     </section>
 
     <section class="connect" class="fonts">
         <p><strong>Let's Connect</strong></p>
         <a href="https://www.linkedin.com/in/rabiatatanda" style="text-decoration: none;" class="skill-icons--linkedin">
         </a>
+    </section>
+
+    <section id="message-form">
+        <h2>Leave a Message</h2>
+        <form id="leave-message">
+
+            <label for="usersName">Username:</label> <br>
+            <input type="text" name="usersName" id="username" required> <br>
+
+            <label for="email">Email:</label> <br>
+            <input type="email" name="email" id="userEmail" required> <br>
+
+            <label for="usersMessage">Message:</label> <br>
+            <textarea name="usersMessage" id="userMessage" required></textarea> <br>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul>
+        </ul>
+
     </section>
 
     <section id="footer">
