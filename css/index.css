@@ -19,6 +19,11 @@
 
 }
 
+#nav-toggle {
+  display: none;
+}
+
+
 
 /*The website font*/
 .body {
@@ -122,12 +127,55 @@ li {
 
 #footer {
   background-color: rgb(146, 252, 252);
-  position: absolute;
   width: 100%;
-  top: 0;
+  bottom: 0;
 }
 
-@media screen and (max-width: 1000px) {
+.copyright {
+  text-align: center;
+}
+
+/*message form*/
+#message-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+}
+
+#username, #userEmail, #userMessage {
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 5px;
+  border: 1px solid #003153;
+  background-color: #f9f9f9;
+}
+
+userMessage {
+  min-height: 15vh;
+  max-height: 30vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+
+}
+
+/*Submit button*/
+#submit {
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 5px;
+  border: none;
+  background-color: #003153;
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 1rem;
+  }
+
+
+
+
+@media screen and (max-width: 1026px) {
   .navbar a {
     display: none;
   }
@@ -140,10 +188,18 @@ li {
     background-color: #003153;
   }
 
+  #nav-toggle:checked ~ .nav-container a {
+    display: block;
+    float: none;
+    text-decoration: none;
+    padding: 2vw;
+    font-family: Helvetica, Arial;
+    font-size: 2rem;
+    color: #003153;
+  }
+
   .skill {
     display: flex;
-
-   
   }
 
   .skill:before {
@@ -163,6 +219,8 @@ li {
     text-align: justify;
 
   }
+
+
 
 
 
