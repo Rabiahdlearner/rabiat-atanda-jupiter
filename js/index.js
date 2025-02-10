@@ -127,3 +127,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 })
+
+//Lesson 13
+//Creating Fetch
+fetch("https://api.github.com/users/rabiahdlearner/repos")
+    .then(response => response.json()) // parsing response as JSON
+
+    .then(repositories => {
+        console.log(repositories);
+        //Display Repositories in List
+        const projectSection = document.getElementById("projects-section");
+        console.log(projectSection);
+
+        const projectList = projectSection.getElementsByTagName("ul");
+        console.log(projectList);
+
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+            project.classList.add("project");
+            project.innerText = repositories[i].name;
+            projectList[0].appendChild(project);
+            console.log(repositories[i]);
+        }
+    })// handling the data
+
+    .catch(err => {
+        console.error("Error fetching data: ", err);// handling the errors
+    });
+
+
+
+
+
+
+
+
+
+
+
